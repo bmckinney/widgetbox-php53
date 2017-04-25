@@ -18,7 +18,7 @@ Usage
 2. Extract the ZIP file.
 3. From the command-line:
 ```
-$ cd vagrant-lamp-release
+$ cd widgetbox-php53-PHP53-2017-04-25
 $ vagrant up
 ```
 ### Connecting
