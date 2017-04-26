@@ -2,7 +2,7 @@
 
 apache_config_file="/etc/apache2/envvars"
 php_config_file="/etc/php5/apache2/php.ini"
-xdebug_config_file="/etc/php5/mods-available/xdebug.ini"
+xdebug_config_file="/etc/php5/conf.d/xdebug.ini"
 mysql_config_file="/etc/mysql/my.cnf"
 default_apache_index="/var/www/html/index.html"
 
@@ -117,11 +117,12 @@ php_go() {
 
 	if [ ! -f "{$xdebug_config_file}" ]; then
 		cat << EOF > ${xdebug_config_file}
-zend_extension=xdebug.so
+zend_extension=/usr/lib/php5/20090626/xdebug.so
 xdebug.remote_enable=1
 xdebug.remote_connect_back=1
 xdebug.remote_port=9000
-xdebug.remote_host=10.0.2.2
+xdebug.remote_host=192.168.66.6
+xdebug.idekey = PHPSTORM
 EOF
 	fi
 
