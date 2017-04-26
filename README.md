@@ -37,9 +37,9 @@ Technical Details
 * Apache 2.2.33
 * PHP 5.3.10
 * MySQL 5.5
-* XDebug
+* XDebug 2.1
 * PHPUnit 4.8
-* Composer
+* Composer 1.4
 
 We are using the base Ubuntu 14.04 box from Vagrant (precise64). If you don't already have it downloaded
 the Vagrantfile has been configured to do it for you. This only has to be done once
